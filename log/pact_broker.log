@@ -1,0 +1,84 @@
+I, [2019-05-27T06:28:58.545838 #18807]  INFO -- : Migrating database
+
+E, [2019-05-27T06:28:58.546916 #18807] ERROR -- : Mysql2::Error: Table 'pact_broker.schema_migrations' doesn't exist: SELECT NULL AS `nil` FROM `schema_migrations` LIMIT 1
+
+E, [2019-05-27T06:28:58.571337 #18807] ERROR -- : Mysql2::Error: Table 'pact_broker.schema_info' doesn't exist: SELECT NULL AS `nil` FROM `schema_info` LIMIT 1
+
+I, [2019-05-27T06:29:01.312892 #18807]  INFO -- : Migrating data
+
+I, [2019-05-27T06:29:01.481140 #18807]  INFO -- : Seeding example data
+
+I, [2019-05-27T06:29:01.526913 #18807]  INFO -- : Upserting version 1315e0b1924cb6f42751f977789be3559373033a for pacticipant_id=2
+
+I, [2019-05-27T06:29:01.542350 #18807]  INFO -- : Upserting version 480e5aeb30467856ca995d0024d2c1800b0719e5 for pacticipant_id=2
+
+I, [2019-05-27T06:29:01.591815 #18807]  INFO -- : Upserting version 4fdf20082263d4c5038355a3b734be1c0054d1e1 for pacticipant_id=2
+
+I, [2019-05-27T06:29:01.603649 #18807]  INFO -- : Marking seed as done
+
+I, [2019-05-27T06:29:07.939354 #18807]  INFO -- : Mounting HAL browser
+
+I, [2019-05-27T06:29:07.939379 #18807]  INFO -- : Mounting UI
+
+I, [2019-05-27T06:29:08.070785 #18807]  INFO -- : Mounting PactBroker::API
+
+I, [2019-05-27T06:29:27.465797 #18894]  INFO -- : Migrating database
+
+I, [2019-05-27T06:29:27.467607 #18894]  INFO -- : Migrating data
+
+I, [2019-05-27T06:29:27.638522 #18894]  INFO -- : Not seeding example data
+
+I, [2019-05-27T06:29:33.311647 #18894]  INFO -- : Mounting HAL browser
+
+I, [2019-05-27T06:29:33.311673 #18894]  INFO -- : Mounting UI
+
+I, [2019-05-27T06:29:33.439954 #18894]  INFO -- : Mounting PactBroker::API
+
+I, [2019-05-27T07:41:43.218438 #2308]  INFO -- : Migrating database
+
+I, [2019-05-27T07:41:43.220203 #2308]  INFO -- : Migrating data
+
+I, [2019-05-27T07:41:43.389114 #2308]  INFO -- : Not seeding example data
+
+I, [2019-05-27T07:41:57.658263 #2435]  INFO -- : Migrating database
+
+I, [2019-05-27T07:41:57.660035 #2435]  INFO -- : Migrating data
+
+I, [2019-05-27T07:41:57.828209 #2435]  INFO -- : Not seeding example data
+
+I, [2019-05-27T07:41:59.262087 #2435]  INFO -- : Mounting HAL browser
+
+I, [2019-05-27T07:41:59.262110 #2435]  INFO -- : Mounting UI
+
+I, [2019-05-27T07:41:59.385069 #2435]  INFO -- : Mounting PactBroker::API
+
+I, [2019-05-27T07:48:34.412329 #2435]  INFO -- : Upserting version 1 for pacticipant_id=3
+
+I, [2019-05-27T07:48:34.459078 #2435]  INFO -- : Creating new pact publication with params {:consumer_name=>"Chocobo app", :provider_name=>"Animal Service", :revision_number=>nil, :consumer_version_number=>"1", :pact_version_sha=>nil, :consumer_name_in_pact=>"Chocobo app", :provider_name_in_pact=>"Animal Service"}
+
+I, [2019-05-27T08:01:14.603005 #2435]  INFO -- : Updating existing pact publication with params {:consumer_name=>"Chocobo app", :provider_name=>"Animal Service", :revision_number=>nil, :consumer_version_number=>"1", :pact_version_sha=>nil, :consumer_name_in_pact=>"Chocobo app", :provider_name_in_pact=>"Animal Service"}
+
+I, [2019-05-27T08:06:31.375962 #2435]  INFO -- : Deleting pact version with params {:consumer_name=>"Chocobo app", :provider_name=>"Animal Service", :revision_number=>nil, :consumer_version_number=>"1", :pact_version_sha=>nil, :consumer_name_in_pact=>nil, :provider_name_in_pact=>nil, :json_content=>""}
+
+I, [2019-05-27T08:08:43.074906 #2435]  INFO -- : Creating new pact publication with params {:consumer_name=>"Chocobo app", :provider_name=>"Animal Service", :revision_number=>nil, :consumer_version_number=>"1", :pact_version_sha=>nil, :consumer_name_in_pact=>"Chocobo app", :provider_name_in_pact=>"Animal Service"}
+
+I, [2019-05-27T08:09:20.795180 #2435]  INFO -- : Creating verification 101 for pact_id=5 from params {"success"=>true, "providerApplicationVersion"=>"1", "testResults"=>{"tests"=>[{"testDescription"=>"has status code 200", "testFullDescription"=>"Verifying a pact between Chocobo app and Animal Service Given a chocobo exists a request for a chocobo with GET /chocobo returns a response which has status code 200", "status"=>"passed", "interactionProviderState"=>"a chocobo exists", "interactionDescription"=>"a request for a chocobo", "actualStatus"=>200}, {"testDescription"=>"has a matching body", "testFullDescription"=>"Verifying a pact between Chocobo app and Animal Service Given a chocobo exists a request for a chocobo with GET /chocobo returns a response which has a matching body", "status"=>"passed", "interactionProviderState"=>"a chocobo exists", "interactionDescription"=>"a request for a chocobo", "actualBody"=>{"name"=>"Sally"}}, {"testDescription"=>"\"Content-Type\" which equals \"application/json\"", "testFullDescription"=>"Verifying a pact between Chocobo app and Animal Service Given a chocobo exists a request for a chocobo with GET /chocobo returns a response which includes headers \"Content-Type\" which equals \"application/json\"", "status"=>"passed", "interactionProviderState"=>"a chocobo exists", "interactionDescription"=>"a request for a chocobo", "actualHeaders"=>{"X-Frame-Options"=>"SAMEORIGIN", "X-XSS-Protection"=>"1; mode=block", "X-Content-Type-Options"=>"nosniff", "X-Download-Options"=>"noopen", "X-Permitted-Cross-Domain-Policies"=>"none", "Referrer-Policy"=>"strict-origin-when-cross-origin", "Content-Type"=>"application/json", "ETag"=>"W/\"c1ae77d88e2faae76c455fa84aa22f53\"", "Cache-Control"=>"max-age=0, private, must-revalidate", "X-Request-Id"=>"87edba21-0589-4278-8666-b2cd33d1e868", "X-Runtime"=>"0.010623", "Content-Length"=>"16"}}], "summary"=>{"testCount"=>3, "failureCount"=>0}, "metadata"=>{"warning"=>"These test results use a beta format. Do not rely on it, as it will definitely change.", "pactVerificationResultsSpecification"=>{"version"=>"1.0.0-beta.1"}}}}
+
+I, [2019-05-27T08:09:20.795861 #2435]  INFO -- : Upserting version 1 for pacticipant_id=4
+
+I, [2019-05-27T08:11:19.288171 #4024]  INFO -- : Migrating database
+
+I, [2019-05-27T08:11:19.289976 #4024]  INFO -- : Migrating data
+
+I, [2019-05-27T08:11:19.458590 #4024]  INFO -- : Not seeding example data
+
+I, [2019-05-27T08:11:23.543062 #4024]  INFO -- : Mounting HAL browser
+
+I, [2019-05-27T08:11:23.543087 #4024]  INFO -- : Mounting UI
+
+I, [2019-05-27T08:11:23.665316 #4024]  INFO -- : Mounting PactBroker::API
+
+I, [2019-05-27T08:11:39.234621 #4024]  INFO -- : Creating verification 102 for pact_id=5 from params {"success"=>false, "providerApplicationVersion"=>"1", "testResults"=>{"tests"=>[{"testDescription"=>"has status code 200", "testFullDescription"=>"Verifying a pact between Chocobo app and Animal Service Given a chocobo exists a request for a chocobo with GET /chocobo returns a response which has status code 200", "status"=>"passed", "interactionProviderState"=>"a chocobo exists", "interactionDescription"=>"a request for a chocobo", "actualStatus"=>200}, {"testDescription"=>"has a matching body", "testFullDescription"=>"Verifying a pact between Chocobo app and Animal Service Given a chocobo exists a request for a chocobo with GET /chocobo returns a response which has a matching body", "status"=>"failed", "interactionProviderState"=>"a chocobo exists", "interactionDescription"=>"a request for a chocobo", "exception"=>{"class"=>"RSpec::Expectations::ExpectationNotMetError", "message"=>"Actual: {\"name\":\"dk\"}\n\nDiff\n--------------------------------------\nKey: - is expected \n     + is actual \nMatching keys and values are not shown\n\n {\n-  \"name\": \"Sally\"\n+  \"name\": \"dk\"\n }\n\nDescription of differences\n--------------------------------------\n* Expected \"Sally\" but got \"dk\" at $.name"}, "actualBody"=>{"name"=>"dk"}, "differences"=>[{"description"=>"Expected \"Sally\" but got \"dk\" at $.name"}]}, {"testDescription"=>"\"Content-Type\" which equals \"application/json\"", "testFullDescription"=>"Verifying a pact between Chocobo app and Animal Service Given a chocobo exists a request for a chocobo with GET /chocobo returns a response which includes headers \"Content-Type\" which equals \"application/json\"", "status"=>"passed", "interactionProviderState"=>"a chocobo exists", "interactionDescription"=>"a request for a chocobo", "actualHeaders"=>{"X-Frame-Options"=>"SAMEORIGIN", "X-XSS-Protection"=>"1; mode=block", "X-Content-Type-Options"=>"nosniff", "X-Download-Options"=>"noopen", "X-Permitted-Cross-Domain-Policies"=>"none", "Referrer-Policy"=>"strict-origin-when-cross-origin", "Content-Type"=>"application/json", "ETag"=>"W/\"e488c649bad7a11976a743224e201132\"", "Cache-Control"=>"max-age=0, private, must-revalidate", "X-Request-Id"=>"2d7f9d70-f9b5-41bc-8640-7d309e722610", "X-Runtime"=>"0.010540", "Content-Length"=>"13"}}], "summary"=>{"testCount"=>3, "failureCount"=>1}, "metadata"=>{"warning"=>"These test results use a beta format. Do not rely on it, as it will definitely change.", "pactVerificationResultsSpecification"=>{"version"=>"1.0.0-beta.1"}}}}
+
+I, [2019-05-27T08:11:49.493438 #4024]  INFO -- : Creating verification 103 for pact_id=5 from params {"success"=>true, "providerApplicationVersion"=>"1", "testResults"=>{"tests"=>[{"testDescription"=>"has status code 200", "testFullDescription"=>"Verifying a pact between Chocobo app and Animal Service Given a chocobo exists a request for a chocobo with GET /chocobo returns a response which has status code 200", "status"=>"passed", "interactionProviderState"=>"a chocobo exists", "interactionDescription"=>"a request for a chocobo", "actualStatus"=>200}, {"testDescription"=>"has a matching body", "testFullDescription"=>"Verifying a pact between Chocobo app and Animal Service Given a chocobo exists a request for a chocobo with GET /chocobo returns a response which has a matching body", "status"=>"passed", "interactionProviderState"=>"a chocobo exists", "interactionDescription"=>"a request for a chocobo", "actualBody"=>{"name"=>"Sally"}}, {"testDescription"=>"\"Content-Type\" which equals \"application/json\"", "testFullDescription"=>"Verifying a pact between Chocobo app and Animal Service Given a chocobo exists a request for a chocobo with GET /chocobo returns a response which includes headers \"Content-Type\" which equals \"application/json\"", "status"=>"passed", "interactionProviderState"=>"a chocobo exists", "interactionDescription"=>"a request for a chocobo", "actualHeaders"=>{"X-Frame-Options"=>"SAMEORIGIN", "X-XSS-Protection"=>"1; mode=block", "X-Content-Type-Options"=>"nosniff", "X-Download-Options"=>"noopen", "X-Permitted-Cross-Domain-Policies"=>"none", "Referrer-Policy"=>"strict-origin-when-cross-origin", "Content-Type"=>"application/json", "ETag"=>"W/\"c1ae77d88e2faae76c455fa84aa22f53\"", "Cache-Control"=>"max-age=0, private, must-revalidate", "X-Request-Id"=>"05a4060c-8c81-4ac7-8893-7c13e952d6d9", "X-Runtime"=>"0.010651", "Content-Length"=>"16"}}], "summary"=>{"testCount"=>3, "failureCount"=>0}, "metadata"=>{"warning"=>"These test results use a beta format. Do not rely on it, as it will definitely change.", "pactVerificationResultsSpecification"=>{"version"=>"1.0.0-beta.1"}}}}
+
